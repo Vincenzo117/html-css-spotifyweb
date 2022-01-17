@@ -75,6 +75,9 @@ main .content-body {
     gap: 15px;
 }
 
+#tool-bar  [class$="__icon"] , #tool-bar [class$="-name"] , #tool-bar [class$="slider"]  {
+    cursor: pointer;
+}
 
 /* song preview */
 
@@ -102,10 +105,19 @@ main .content-body {
     font-weight: 450;
 }
 
+#tool-bar .song-preview__song-name:hover , #tool-bar .song-preview__artist-name:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 #tool-bar .song-preview__icon-list {
     display: flex;
     color: #7D7F84;
     gap: 10px;
+}
+
+#tool-bar .song-preview__icon:hover {
+    color: white;
 }
 
 
@@ -125,8 +137,13 @@ main .content-body {
 }
 
 #tool-bar .player-actions__icon--large {
+    cursor: pointer;
     font-size: 35px;
     margin: 0 10px;
+}
+
+#tool-bar .player-actions__icon--large:hover {
+    font-size: 40px;
 }
 
 #tool-bar .player-actions__time-bar {
@@ -146,7 +163,7 @@ main .content-body {
     flex-grow: 1;
 }
 
-#tool-bar .player-actions__total-time {
+#tool-bar .player-actions__slider-total-time {
     height: 4px;
     border-radius: 2px;
     width: 100%;
@@ -154,13 +171,28 @@ main .content-body {
     position: absolute;
 }
 
-#tool-bar .player-actions__current-time {
+#tool-bar .player-actions__slider-current-time {
     height: 4px;
     border-radius: 2px;
     background-color: #C1C1C1;
     width: 25%;
     position: relative;
     z-index: 10;
+}
+
+#tool-bar .player-actions__time-slider:hover > .player-actions__slider-current-time {
+    background-color: #1DB954;
+}
+
+#tool-bar .player-actions__time-slider:hover > .player-actions__slider-current-time::after {
+    content: '.';
+    padding: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:calc( 100% - 7px);
+    top: -5px;
 }
 
 
@@ -180,13 +212,13 @@ main .content-body {
     display: contents;
 }
 
-#tool-bar .volume-actions__slider {
+#tool-bar .volume-actions__volume-slider {
     position: relative;
     flex-grow: 1;
     height: 4px;
 }
 
-#tool-bar .volume-actions__total-volume {
+#tool-bar .volume-actions__slider-total-volume {
     height: 100%;
     border-radius: 2px;
     width: 100%;
@@ -194,11 +226,26 @@ main .content-body {
     position: absolute;
 }
 
-#tool-bar .volume-actions__current-volume {
+#tool-bar .volume-actions__slider-current-volume {
     height: 100%;
     border-radius: 2px;
     background-color: #C1C1C1;
     width: 25%;
     position: relative;
     z-index: 10;
+}
+
+#tool-bar .volume-actions__volume-slider:hover > .volume-actions__slider-current-volume {
+    background-color: #1DB954;
+}
+
+#tool-bar .volume-actions__volume-slider:hover > .volume-actions__slider-current-volume::after {
+    content: '.';
+    padding: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:calc( 100% - 7px);
+    top: -5px;
 }
