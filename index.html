@@ -15,18 +15,18 @@
 
         <main>
 
-            <nav class="main__sidebar">
+            <nav class="sidebar">
                 sidebar
             </nav>
             
-            <div class="main__content">
+            <div class="content">
                 
-                <div class="main__content__header">
-                    main__content__header
+                <div class="content__header">
+                    content__header
                 </div>
 
-                <div class="main__content__body">
-                    main__content__body
+                <div class="content__body">
+                    content__body
                 </div>
 
             </div>
@@ -35,59 +35,62 @@
         
         <footer id="tool-bar">
             
-            <div class="tool-bar__song-preview">
+            <div class="song-preview">
 
-                <div class="tool-bar__song-preview__album-img">
+                <div class="song-preview__album-img">
                     <img src="img/sinister.jpeg" alt="#">
                 </div>
 
-                <div class="tool-bar__song-preview__names">
-                    <div class="tool-bar__song-preview__names__song">
+                <div class="song-preview__names">
+                    <div class="song-preview__song-name">
                         Sinister
                     </div>
-                    <div class="tool-bar__song-preview__names__artist">
+                    <div class="song-preview__artist-name">
                         Christopher Young
                     </div>
                 </div>
 
-                <ul class="tool-bar__song-preview__icons">
-                    <li><i class="far fa-heart"></i></li>
-                    <li><i class="far fa-folder"></i></li>
+                <ul class="song-preview__icon-list">
+                    <li class="song-preview__icon"><i class="far fa-heart"></i></li>
+                    <li class="song-preview__icon"><i class="far fa-folder"></i></li>
                 </ul>
 
             </div>
 
-            <div class="tool-bar__player-actions">
+            <div class="player-actions">
                 
-                <ul class="tool-bar__player-actions__icons">
-                    <li><i class="fas fa-random"></i></li>
-                    <li><i class="fas fa-step-backward"></i></li>
-                    <li><i class="far fa-play-circle"></i></li>
-                    <li><i class="fas fa-step-forward"></i></li>
-                    <li><i class="fas fa-redo"></i></li>
+                <ul class="player-actions__icon-list">
+                    <li class="player-actions__icon"><i class="fas fa-random"></i></li>
+                    <li class="player-actions__icon"><i class="fas fa-step-backward"></i></li>
+                    <li class="player-actions__icon player-actions__icon--large"><i class="far fa-play-circle"></i></li>
+                    <li class="player-actions__icon"><i class="fas fa-step-forward"></i></li>
+                    <li class="player-actions__icon"><i class="fas fa-redo"></i></li>
                 </ul>
 
-                <div class="tool-bar__player-actions__time-bar">
-                    <div class="tool-bar__player-actions__time-bar__time-frame">0:25</div>
-                    <div class="tool-bar__player-actions__time-bar__slider">
-                        <div class="tool-bar__player-actions__time-bar__slider__total-time"></div>
-                        <div class="tool-bar__player-actions__time-bar__slider__current-time"></div>
+                <div class="player-actions__time-bar">
+                    <div class="player-actions__time-frame">0:25</div>
+                    <div class="player-actions__time-slider">
+                        <div class="player-actions__total-time"></div>
+                        <div class="player-actions__current-time"></div>
                     </div>
-                    <div class="tool-bar__player-actions__time-bar__time-frame">4:35</div>   
+                    <div class="player-actions__time-frame">4:35</div>   
                 </div>
 
             </div>
 
-            <div class="tool-bar__volume-actions">
-                <ul class="tool-bar__volume-actions__icons">
-                    <li><i class="fas fa-list"></i></li>
-                    <li><i class="fas fa-desktop"></i></li>
-                    <li><i class="fas fa-volume-up"></i></li>
+            <div class="volume-actions">
+
+                <ul class="volume-actions__icon-list">
+                    <li class="volume-actions__icon"><i class="fas fa-list"></i></li>
+                    <li class="volume-actions__icon"><i class="fas fa-desktop"></i></li>
+                    <li class="volume-actions__icon"><i class="fas fa-volume-up"></i></li>
                 </ul>
-                <div class="tool-bar__volume-actions__slider">
-                    <div class="tool-bar__volume-actions__slider__total-volume"></div>
-                    <div class="tool-bar__volume-actions__slider__current-volume"></div>
+
+                <div class="volume-actions__slider">
+                    <div class="volume-actions__total-volume"></div>
+                    <div class="volume-actions__current-volume"></div>
                 </div>
+                
             </div>
 
         </footer>
