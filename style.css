@@ -24,6 +24,17 @@ main .main__sidebar {
 }
 
 main .main__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main .main__content__header {
+    background-color: #080B12;
+    height: 90px;
+}
+
+main .main__content__body {
     background-color: #141922;
     flex-grow: 1;
 }
