@@ -3,3 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+   display: flex;
+   flex-direction: column; 
+   height: 100vh;
+   color: white;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+main .main__sidebar {
+    background-color: #000000;
+    width: 230px;
+    
+}
+
+main .main__content {
+    background-color: #141922;
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #282828;
+    height: 90px;
+}
