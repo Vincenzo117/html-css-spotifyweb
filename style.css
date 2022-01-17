@@ -93,3 +93,55 @@ main .main__content__body {
     color: #7D7F84;
     gap: 10px;
 }
+
+#tool-bar .tool-bar__player-actions {
+    max-width: 525px;
+    flex-grow: 1;
+}
+
+#tool-bar .tool-bar__player-actions__icons {
+    max-width: 188px;
+    margin: 0 auto 14px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#tool-bar .tool-bar__player-actions__icons i:nth-child(3) {
+    font-size: 35px;
+    margin: 0 10px;
+}
+
+#tool-bar .tool-bar__player-actions__time-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+#tool-bar .tool-bar__player-actions__time-bar__time-frame {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#tool-bar .tool-bar__player-actions__time-bar__slider {
+    position: relative;
+    flex-grow: 1;
+}
+
+#tool-bar .tool-bar__player-actions__time-bar__slider__total-time {
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #5A5A5A;  
+    position: absolute;
+}
+
+#tool-bar .tool-bar__player-actions__time-bar__slider__current-time {
+    height: 4px;
+    border-radius: 2px;
+    background-color: #C1C1C1;
+    width: 25%;
+    position: relative;
+    z-index: 10;
+}
