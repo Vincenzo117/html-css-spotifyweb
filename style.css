@@ -51,12 +51,12 @@ main .content {
     flex-grow: 1;
 }
 
-main .content__header {
+main .content-header {
     background-color: #080B12;
     height: 90px;
 }
 
-main .content__body {
+main .content-body {
     background-color: #141922;
     flex-grow: 1;
 }

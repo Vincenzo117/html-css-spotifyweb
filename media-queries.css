@@ -1,0 +1,7 @@
+/* TOOLBAR RESPONSIVENESS */
+
+@media screen and (max-width: 640px) {
+    #tool-bar .song-preview__icon-list {
+        flex-direction: column;
+    }
+}
