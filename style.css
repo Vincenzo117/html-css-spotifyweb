@@ -11,17 +11,25 @@
    color: white;
 }
 
+
+
+/* ---- MAIN ---- */
+
+
 main {
     display: flex;
     flex-grow: 1;
 }
 
+/* sidebar */
 
 main .main__sidebar {
     background-color: #000000;
     width: 230px;
     
 }
+
+/* main content */
 
 main .main__content {
     display: flex;
@@ -39,7 +47,15 @@ main .main__content__body {
     flex-grow: 1;
 }
 
-footer {
+
+
+/* ---- TOOL BAR ---- */
+
+#tool-bar {
     background-color: #282828;
     height: 90px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
