@@ -8,6 +8,10 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 .container {
    display: flex;
    flex-direction: column; 
@@ -19,6 +23,7 @@ img {
 
 
 
+
 /* ---- MAIN ---- */
 
 
@@ -27,6 +32,7 @@ main {
     flex-grow: 1;
 }
 
+
 /* sidebar */
 
 main .main__sidebar {
@@ -34,6 +40,7 @@ main .main__sidebar {
     width: 230px;
     
 }
+
 
 /* main content */
 
@@ -55,6 +62,7 @@ main .main__content__body {
 
 
 
+
 /* ---- TOOL BAR ---- */
 
 #tool-bar {
@@ -64,6 +72,9 @@ main .main__content__body {
     justify-content: space-between;
     align-items: center;
 }
+
+
+/* song preview */
 
 #tool-bar .tool-bar__song-preview {
     display: flex;
@@ -94,6 +105,9 @@ main .main__content__body {
     gap: 10px;
 }
 
+
+/* player actions */
+
 #tool-bar .tool-bar__player-actions {
     max-width: 525px;
     flex-grow: 1;
@@ -107,7 +121,7 @@ main .main__content__body {
     gap: 20px;
 }
 
-#tool-bar .tool-bar__player-actions__icons i:nth-child(3) {
+#tool-bar .tool-bar__player-actions__icons li:nth-child(3) {
     font-size: 35px;
     margin: 0 10px;
 }
@@ -139,6 +153,46 @@ main .main__content__body {
 
 #tool-bar .tool-bar__player-actions__time-bar__slider__current-time {
     height: 4px;
+    border-radius: 2px;
+    background-color: #C1C1C1;
+    width: 25%;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* volume actions */
+
+#tool-bar .tool-bar__volume-actions {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    flex-grow: 1;
+    max-width: 210px;
+    min-width: 165px;
+    align-items: center;
+}
+
+#tool-bar .tool-bar__volume-actions__icons {
+    display: contents;
+}
+
+#tool-bar .tool-bar__volume-actions__slider {
+    position: relative;
+    flex-grow: 1;
+    height: 4px;
+}
+
+#tool-bar .tool-bar__volume-actions__slider__total-volume {
+    height: 100%;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #5A5A5A;  
+    position: absolute;
+}
+
+#tool-bar .tool-bar__volume-actions__slider__current-volume {
+    height: 100%;
     border-radius: 2px;
     background-color: #C1C1C1;
     width: 25%;
