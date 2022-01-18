@@ -42,6 +42,7 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .sidebar__logo-big {
@@ -55,8 +56,6 @@ main {
     margin:7px 0 5px;
     display: none;
 }
-
-
 
 .sidebar__menu-item {
     border-left: 3px solid black;
@@ -161,9 +160,30 @@ main {
     flex-grow: 1;
 }
 
-.main-content-header {
+
+/* main upgrade */
+
+.main-upgrade {
     background-color: #080B12;
     height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 15px;
+}
+
+.main-upgrade__button {
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 220px;
+    padding: 12px 0;
+    cursor: pointer;
+}
+
+.main-upgrade__button:hover {
+    scale: 1.1;
 }
 
 .main-content-body {
