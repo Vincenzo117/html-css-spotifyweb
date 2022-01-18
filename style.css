@@ -39,6 +39,7 @@ main {
 main .sidebar {
     background-color: #000000;
     width: 230px;
+    position: relative;
 }
 
 main .sidebar__logo {
@@ -97,6 +98,38 @@ main .sidebar__playlist-item {
     cursor: pointer;
 }
 
+main .sidebar__bottom-widget {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: black;
+}
+
+main .sidebar__install-app {
+    color: #7D7F84;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 0;
+    border-bottom: 1px solid #7D7F84;
+    margin-bottom: 14px;
+}
+
+main .sidebar__user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .sidebar__user-img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #7D7F84;
+    overflow: hidden;
+}
 
 /* main content */
 
