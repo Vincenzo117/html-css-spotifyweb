@@ -39,24 +39,49 @@ main {
 main .sidebar {
     background-color: #000000;
     width: 230px;
-    
+}
+
+main .sidebar__logo {
+    padding: 20px;
+    width: 135px;
+    margin-bottom: 10px;
+}
+
+
+main .sidebar__menu-item {
+    border-left: 3px solid black;
+    padding: 7px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #7D7F84;
+    cursor: pointer;
+}
+
+main .sidebar__menu-item--active , .sidebar__menu-item:hover {
+    border-left: 3px solid #ADFF2F;
+    color: #D2D2D2;
+}
+
+main .sidebar__menu-item i {
+    font-size: 22px;
 }
 
 
 /* main content */
 
-main .content {
+main .main-content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-main .content-header {
+main .main-content-header {
     background-color: #080B12;
     height: 90px;
 }
 
-main .content-body {
+main .main-content-body {
     background-color: #141922;
     flex-grow: 1;
 }
@@ -185,14 +210,14 @@ main .content-body {
 }
 
 #tool-bar .player-actions__time-slider:hover > .player-actions__slider-current-time::after {
-    content: '.';
-    padding: 0 5px;
+    content: '';
+    height: 12px;
+    width: 12px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    top:0;
     left:calc( 100% - 7px);
-    top: -5px;
+    top: -4px;
 }
 
 
@@ -240,12 +265,12 @@ main .content-body {
 }
 
 #tool-bar .volume-actions__volume-slider:hover > .volume-actions__slider-current-volume::after {
-    content: '.';
-    padding: 0 5px;
+    content: '';
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     background-color: white;
     position: absolute;
-    top:0;
     left:calc( 100% - 7px);
-    top: -5px;
+    top: -4px;
 }
