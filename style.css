@@ -30,7 +30,7 @@ ul {
 main {
     display: flex;
     flex-grow: 1;
-    overflow: auto  ;
+    overflow: hidden;
 }
 
 
@@ -50,7 +50,7 @@ main .sidebar__logo {
 
 main .sidebar__menu-item {
     border-left: 3px solid black;
-    padding: 7px 20px;
+    padding: 7px 17px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -65,6 +65,36 @@ main .sidebar__menu-item--active , .sidebar__menu-item:hover {
 
 main .sidebar__menu-item i {
     font-size: 22px;
+    width: 24px;
+}
+
+main .sidebar__widget-playlist {
+    padding: 20px;
+}
+
+main .sidebar__playlist-title {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+main .sidebar__create-playlist {
+    display: flex;
+    align-items: center;
+    color: #7D7F84;
+    gap: 10px;
+    cursor: pointer;
+}
+
+main .sidebar__create-playlist i {
+    font-size: 37px;
+}
+
+main .sidebar__playlist-item {
+    color: #7D7F84;
+    margin: 23px  0 0;
+    cursor: pointer;
 }
 
 
