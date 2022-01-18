@@ -36,7 +36,7 @@ main {
 
 /* sidebar */
 
-main .sidebar {
+.sidebar {
     background-color: #000000;
     width: 230px;
     position: relative;
@@ -44,14 +44,21 @@ main .sidebar {
     flex-direction: column;
 }
 
-main .sidebar__logo {
+.sidebar__logo-big {
     padding: 20px;
     width: 135px;
     margin-bottom: 10px;
 }
 
+.sidebar__logo-small {
+    width: 28px;
+    margin:7px 0 5px;
+    display: none;
+}
 
-main .sidebar__menu-item {
+
+
+.sidebar__menu-item {
     border-left: 3px solid black;
     padding: 7px 17px;
     display: flex;
@@ -61,7 +68,7 @@ main .sidebar__menu-item {
     cursor: pointer;
 }
 
-main .sidebar__menu-item--active , .sidebar__menu-item:hover {
+.sidebar__menu-item--active , .sidebar__menu-item:hover {
     border-left: 3px solid #ADFF2F;
     color: #D2D2D2;
 }
@@ -70,20 +77,20 @@ main .sidebar__menu-item--active , .sidebar__menu-item:hover {
     width: 22px;
     height: 22px;
 }
-main .sidebar__widget-playlist {
+.sidebar__widget-playlist {
     padding: 20px;
     flex-grow: 1;
     overflow: auto;
 }
 
-main .sidebar__playlist-title {
+.sidebar__playlist-title {
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-main .sidebar__create-playlist {
+.sidebar__create-playlist {
     display: flex;
     align-items: center;
     color: #7D7F84;
@@ -91,24 +98,32 @@ main .sidebar__create-playlist {
     cursor: pointer;
 }
 
-main .sidebar__create-playlist i {
+.sidebar__create-playlist:hover {
+    color: white;
+}
+
+.sidebar__create-playlist i {
     font-size: 37px;
 }
 
-main .sidebar__playlist-item {
+.sidebar__playlist-item {
     color: #7D7F84;
     margin: 23px  0 0;
     cursor: pointer;
 }
 
-main .sidebar__bottom-widget {
+.sidebar__playlist-item:hover {
+    color: white;
+}
+
+.sidebar__bottom-widget {
     position: sticky;
     width: 100%;
     padding: 10px 20px;
     background-color: black;
 }
 
-main .sidebar__install-app {
+.sidebar__install-app {
     color: #7D7F84;
     display: flex;
     align-items: center;
@@ -116,15 +131,20 @@ main .sidebar__install-app {
     padding: 13px 0;
     border-bottom: 1px solid #7D7F84;
     margin-bottom: 14px;
+    cursor: pointer;
 }
 
-main .sidebar__user-profile {
+.sidebar__install-app:hover {
+    color: white;
+}
+
+.sidebar__user-profile {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-main .sidebar__user-img {
+.sidebar__user-img {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -135,18 +155,18 @@ main .sidebar__user-img {
 
 /* main content */
 
-main .main-content {
+.main-content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-main .main-content-header {
+.main-content-header {
     background-color: #080B12;
     height: 90px;
 }
 
-main .main-content-body {
+.main-content-body {
     background-color: #141922;
     flex-grow: 1;
 }
@@ -171,7 +191,7 @@ main .main-content-body {
 
 /* song preview */
 
-#tool-bar .song-preview {
+.song-preview {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -179,46 +199,46 @@ main .main-content-body {
     padding: 10px;
 }
 
-#tool-bar .song-preview__album-img {
+.song-preview__album-img {
     max-width: 42px;
     min-width: 28px;
 }
 
-#tool-bar .song-preview__song-name {
+.song-preview__song-name {
     font-weight: 500;
     margin-bottom: 3px;
 }
 
-#tool-bar .song-preview__artist-name {
+.song-preview__artist-name {
     font-size: 12px;
     color: #7D7F84;
     font-weight: 450;
 }
 
-#tool-bar .song-preview__song-name:hover , #tool-bar .song-preview__artist-name:hover {
+.song-preview__song-name:hover , .song-preview__artist-name:hover {
     text-decoration: underline;
     color: white;
 }
 
-#tool-bar .song-preview__icon-list {
+.song-preview__icon-list {
     display: flex;
     color: #7D7F84;
     gap: 10px;
 }
 
-#tool-bar .song-preview__icon:hover {
+.song-preview__icon:hover {
     color: white;
 }
 
 
 /* player actions */
 
-#tool-bar .player-actions {
+.player-actions {
     max-width: 525px;
     flex-grow: 1;
 }
 
-#tool-bar .player-actions__icon-list {
+.player-actions__icon-list {
     max-width: 188px;
     margin: 0 auto 14px;
     display: flex;
@@ -226,34 +246,34 @@ main .main-content-body {
     gap: 20px;
 }
 
-#tool-bar .player-actions__icon--large {
+.player-actions__icon--large {
     cursor: pointer;
     font-size: 35px;
     margin: 0 10px;
 }
 
-#tool-bar .player-actions__icon--large:hover {
+.player-actions__icon--large:hover {
     font-size: 40px;
 }
 
-#tool-bar .player-actions__time-bar {
+.player-actions__time-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
 }
 
-#tool-bar .player-actions__time-frame {
+.player-actions__time-frame {
     font-size: 12px;
     font-weight: 500;
 }
 
-#tool-bar .player-actions__time-slider {
+.player-actions__time-slider {
     position: relative;
     flex-grow: 1;
 }
 
-#tool-bar .player-actions__slider-total-time {
+.player-actions__slider-total-time {
     height: 4px;
     border-radius: 2px;
     width: 100%;
@@ -261,7 +281,7 @@ main .main-content-body {
     position: absolute;
 }
 
-#tool-bar .player-actions__slider-current-time {
+.player-actions__slider-current-time {
     height: 4px;
     border-radius: 2px;
     background-color: #C1C1C1;
@@ -270,11 +290,11 @@ main .main-content-body {
     z-index: 10;
 }
 
-#tool-bar .player-actions__time-slider:hover > .player-actions__slider-current-time {
+.player-actions__time-slider:hover > .player-actions__slider-current-time {
     background-color: #1DB954;
 }
 
-#tool-bar .player-actions__time-slider:hover > .player-actions__slider-current-time::after {
+.player-actions__time-slider:hover > .player-actions__slider-current-time::after {
     content: '';
     height: 12px;
     width: 12px;
@@ -288,7 +308,7 @@ main .main-content-body {
 
 /* volume actions */
 
-#tool-bar .volume-actions {
+.volume-actions {
     display: flex;
     gap: 15px;
     padding: 10px;
@@ -298,17 +318,17 @@ main .main-content-body {
     align-items: center;
 }
 
-#tool-bar .volume-actions__icon-list {
+.volume-actions__icon-list {
     display: contents;
 }
 
-#tool-bar .volume-actions__volume-slider {
+.volume-actions__volume-slider {
     position: relative;
     flex-grow: 1;
     height: 4px;
 }
 
-#tool-bar .volume-actions__slider-total-volume {
+.volume-actions__slider-total-volume {
     height: 100%;
     border-radius: 2px;
     width: 100%;
@@ -316,7 +336,7 @@ main .main-content-body {
     position: absolute;
 }
 
-#tool-bar .volume-actions__slider-current-volume {
+.volume-actions__slider-current-volume {
     height: 100%;
     border-radius: 2px;
     background-color: #C1C1C1;
@@ -325,11 +345,11 @@ main .main-content-body {
     z-index: 10;
 }
 
-#tool-bar .volume-actions__volume-slider:hover > .volume-actions__slider-current-volume {
+.volume-actions__volume-slider:hover > .volume-actions__slider-current-volume {
     background-color: #1DB954;
 }
 
-#tool-bar .volume-actions__volume-slider:hover > .volume-actions__slider-current-volume::after {
+.volume-actions__volume-slider:hover > .volume-actions__slider-current-volume::after {
     content: '';
     width: 12px;
     height: 12px;

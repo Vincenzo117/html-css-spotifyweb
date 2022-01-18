@@ -1,6 +1,65 @@
+/* SIDEBAR RESPONSIVENESS */
+
+@media screen and (max-width: 700px) {
+
+    .sidebar {
+        width: 50px;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .sidebar__logo-small{
+        display: inline-block;
+    }
+
+    .sidebar__logo-big {
+        display: none;
+    }
+
+    .sidebar__widget-menu {
+        display: contents;
+    }
+
+    .sidebar__menu-option {
+        display: none;
+    }
+
+    .sidebar__menu-item {
+        border: 0;
+        padding: 0;
+    }
+
+    .sidebar__menu-item--active, .sidebar__menu-item:hover {
+        border: 0;
+    }
+
+    .sidebar__widget-playlist {
+        display: none;
+    }
+
+    .sidebar__bottom-widget {
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .sidebar__install-app {
+        padding: 7px;
+        border: 0;
+    }
+
+    .sidebar__install-app span {
+        display: none;
+    }
+
+    .sidebar__user-name {
+        display: none;
+    }
+}
+
 /* TOOLBAR RESPONSIVENESS */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 700px) {
     #tool-bar .song-preview__icon-list {
         flex-direction: column;
     }
