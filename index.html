@@ -18,54 +18,65 @@
 
             <nav class="sidebar">
                 
-                <div class="sidebar__logo">
-                    <img class="sidebar__logo-big" src="img/logo.svg" alt="">
-                    <img class="sidebar__logo-small" src="img/logo-small.svg" alt="">
+                <div class="logo-wrapper">
+                    <img class="logo-wrapper__logo logo-wrapper__logo--big" src="img/logo.svg" alt="">
+                    <img class="logo-wrapper__logo logo-wrapper__logo--small" src="img/logo-small.svg" alt="">
                 </div>
 
-                <ul class="sidebar__widget-menu">
-                    <li class="sidebar__menu-item sidebar__menu-item--active">
-                        <img src="img/home.svg" alt="">
-                        <div class="sidebar__menu-option">Home</div>
+                <ul class="widget-menu">
+
+                    <li class="widget-menu__item widget-menu__item--active">
+                        <img class="widget-menu__icon" src="img/home.svg" alt="">
+                        <div class="widget-menu__option">Home</div>
                     </li>
-                    <li class="sidebar__menu-item">
-                        <img src="img/search.svg" alt="">
-                        <div class="sidebar__menu-option">Cerca</div>
+
+                    <li class="widget-menu__item">
+                        <img class="widget-menu__icon" src="img/search.svg" alt="">
+                        <div class="widget-menu__option">Cerca</div>
                     </li>
-                    <li class="sidebar__menu-item">
-                        <img src="img/libreria.svg" alt="">
-                        <div class="sidebar__menu-option">La tua libreria</div>
+
+                    <li class="widget-menu__item">
+                        <img class="widget-menu__icon" src="img/libreria.svg" alt="">
+                        <div class="widget-menu__option">La tua libreria</div>
                     </li>
+
                 </ul>
 
-                <div class="sidebar__widget-playlist">
-                    <div class="sidebar__playlist-title">Playlist</div>
-                    <div class="sidebar__create-playlist">
+                <div class="widget-playlist">
+
+                    <div class="widget-playlist__title">Playlist</div>
+
+                    <div class="widget-playlist__create">
                         <i class="fas fa-plus-square"></i>
                         Crea Playlist
                     </div>
-                    <ul class="sidebar__playlist-list">
-                        <li class="sidebar__playlist-item">Nome playlist</li>
-                        <li class="sidebar__playlist-item">Nome playlist</li>
-                        <li class="sidebar__playlist-item">Nome playlist</li>
-                        <li class="sidebar__playlist-item">Nome playlist</li>
-                        <li class="sidebar__playlist-item">Nome playlist</li>
-                        <li class="sidebar__playlist-item">Nome playlist</li>
-                        <li class="sidebar__playlist-item">Nome playlist</li>
+
+                    <ul class="widget-playlist__list">
+                        <li class="widget-playlist__item">Nome playlist</li>
+                        <li class="widget-playlist__item">Nome playlist</li>
+                        <li class="widget-playlist__item">Nome playlist</li>
+                        <li class="widget-playlist__item">Nome playlist</li>
+                        <li class="widget-playlist__item">Nome playlist</li>
+                        <li class="widget-playlist__item">Nome playlist</li>
+                        <li class="widget-playlist__item">Nome playlist</li>
                     </ul>
+
                 </div>
 
-                <div class="sidebar__bottom-widget">
-                    <div class="sidebar__install-app">
+                <div class="user-widget">
+
+                    <div class="user-widget__install-app">
                         <i class="far fa-arrow-alt-circle-down"></i>
                         <span>Installa app</span>
                     </div>
-                    <div class="sidebar__user-profile">
-                        <div class="sidebar__user-img">
+
+                    <div class="user-widget__profile">
+                        <div class="user-widget__img">
                             <img src="img/profile.svg" alt="">
                         </div>
-                        <div class="sidebar__user-name">Vincenzo</div>
+                        <div class="user-widget__name">Vincenzo</div>
                     </div>
+
                 </div>
 
             </nav>
@@ -76,9 +87,70 @@
                     <div class="main-upgrade__button">Effettua l'upgrade</div>
                 </div>
 
-                <div class="main-content-body">
-                    content-body
+                <div class="main-body">
+                    
+                    <div class="main-categories">
+                        <ul class="main-categories__list">
+                            <li class="main-categories__option main-categories__option--active">In Evidenza</li>
+                            <li class="main-categories__option">Podcast</li>
+                            <li class="main-categories__option">Classifiche</li>
+                            <li class="main-categories__option">Generi e Mood</li>
+                            <li class="main-categories__option">Nuove Uscite</li>
+                            <li class="main-categories__option">Scopri</li>
+                        </ul>
+                    </div>
+
+                    <div class="catalogue">
+                        <div class="catalogue__title">Recently played</div>
+                        <ul class="catalogue__list">
+                            <li class="catalogue__card">
+                                <figure class="catalogue__card-thumb">
+                                    <img src="img/metal_lifting.jpg" alt="">
+                                </figure>
+                                <div class="catalogue__card-title">Heavy Metal</div>
+                                <div class="catalogue__card-subtitle">Subtitle</div>
+                            </li>
+                            <li class="catalogue__card">
+                                <figure class="catalogue__card-thumb">
+                                    <img src="img/stranger.jpeg" alt="">
+                                </figure>
+                                <div class="catalogue__card-title">Stranger Things, Vol. 1 (a Netflix Original Series soundtrack)</div>
+                                <div class="catalogue__card-subtitle">Kyle Dixon & Michael Stein</div>
+                            </li>
+                            <li class="catalogue__card">
+                                <figure class="catalogue__card-thumb">
+                                    <img src="img/aquietplace.jpeg" alt="">
+                                </figure>
+                                <div class="catalogue__card-title">Title</div>
+                                <div class="catalogue__card-subtitle">Subtitle</div>
+                            </li>
+                            <li class="catalogue__card">
+                                <figure class="catalogue__card-thumb">
+                                    <img src="img/split.jpeg" alt="">
+                                </figure>
+                                <div class="catalogue__card-title">Title</div>
+                                <div class="catalogue__card-subtitle">Subtitle</div>
+                            </li>
+                            <li class="catalogue__card">
+                                <figure class="catalogue__card-thumb">
+                                    <img src="img/cure.jpeg" alt="">
+                                </figure>
+                                <div class="catalogue__card-title">Title</div>
+                                <div class="catalogue__card-subtitle">Subtitle</div>
+                            </li>
+                            <li class="catalogue__card">
+                                <figure class="catalogue__card-thumb">
+                                    <img src="img/sinister.jpeg" alt="">
+                                </figure>
+                                <div class="catalogue__card-title">Title</div>
+                                <div class="catalogue__card-subtitle">Subtitle</div>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
+
+                
 
             </div>
             
@@ -92,7 +164,7 @@
                     <img src="img/AndyBey.jpg" alt="#">
                 </div>
 
-                <div class="song-preview__names">
+                <div class="song-preview__info">
                     <div class="song-preview__song-name">
                         Celestial Blues
                     </div>

@@ -8,51 +8,51 @@
         gap: 12px;
     }
 
-    .sidebar__logo-small{
+    .logo-wrapper__logo--small{
         display: inline-block;
     }
 
-    .sidebar__logo-big {
+    .logo-wrapper__logo--big {
         display: none;
     }
 
-    .sidebar__widget-menu {
+    .widget-menu {
         display: contents;
     }
 
-    .sidebar__menu-option {
+    .widget-menu__option {
         display: none;
     }
 
-    .sidebar__menu-item {
+    .widget-menu__item {
         border: 0;
         padding: 0;
     }
 
-    .sidebar__menu-item--active, .sidebar__menu-item:hover {
+    .widget-menu__item--active, .widget-menu__item:hover {
         border: 0;
     }
 
-    .sidebar__widget-playlist {
+    .widget-playlist {
         display: none;
     }
 
-    .sidebar__bottom-widget {
+    .user-widget {
         padding: 10px;
         position: absolute;
         bottom: 0;
     }
 
-    .sidebar__install-app {
+    .user-widget__install-app {
         padding: 7px;
         border: 0;
     }
 
-    .sidebar__install-app span {
+    .user-widget__install-app span {
         display: none;
     }
 
-    .sidebar__user-name {
+    .user-widget__name {
         display: none;
     }
 }
