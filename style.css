@@ -263,12 +263,18 @@ main {
 .catalogue__title {
     font-weight: 600;
     font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.catalogue__description {
+    color: #7D7F84;
+    font-weight: 450;
     margin-bottom: 30px;
 }
 
 .catalogue__list {
     display: flex;
-    justify-content: space-around;
+    
     gap: 15px;
 }
 
@@ -280,6 +286,11 @@ main {
 
 .catalogue__card-thumb{
     width: 100%;
+}
+
+.catalogue__card-thumb--circural {
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .catalogue__card-title {
