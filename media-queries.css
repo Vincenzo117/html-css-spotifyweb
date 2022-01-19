@@ -58,6 +58,24 @@
 }
 
 
+/* MAIN BODY RESPONSIVENESS */
+
+@media screen and (max-width:1240px) {
+    .catalogue__card {
+        width: 23%;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .catalogue__card {
+        width: 50%;
+    }
+}
+
+
+
+
+
 
 /* TOOLBAR RESPONSIVENESS */
 
