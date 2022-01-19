@@ -24,6 +24,7 @@ ul {
 
 
 
+
 /* ---- MAIN ---- */
 
 main {
@@ -284,9 +285,39 @@ main {
     text-align: center;
 }
 
-.catalogue__card-thumb{
+.catalogue__card-thumb {
     width: 100%;
+    position: relative;
 }
+
+.catalogue__card-thumb:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: black;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.catalogue__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    font-size: 32px;
+    display: none;  
+    z-index: 2;
+}
+
+.catalogue__card-thumb:hover > .catalogue__play-btn {
+    display: block;
+}
+
 
 .catalogue__card-thumb--circural {
     border-radius: 50%;
