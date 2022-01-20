@@ -453,7 +453,7 @@ main {
     background-color: #C1C1C1;
     position: relative;
     z-index: 10;
-    animation: bar-progress 198s;
+    animation: bar-progress 198s linear;
 }
 
 .player-actions__time-slider:hover > .player-actions__slider-current-time {
