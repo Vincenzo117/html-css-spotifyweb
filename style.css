@@ -451,9 +451,9 @@ main {
     height: 4px;
     border-radius: 2px;
     background-color: #C1C1C1;
-    width: 25%;
     position: relative;
     z-index: 10;
+    animation: bar-progress 198s;
 }
 
 .player-actions__time-slider:hover > .player-actions__slider-current-time {
@@ -469,6 +469,11 @@ main {
     position: absolute;
     left:calc( 100% - 7px);
     top: -4px;
+}
+
+@keyframes bar-progress {
+    from {width: 0%;}
+    to {width: 100%;}
 }
 
 
