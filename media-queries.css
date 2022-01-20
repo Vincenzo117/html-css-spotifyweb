@@ -85,7 +85,7 @@
     }
 }
 
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 500px) {
     .main-upgrade {
         display: none;
     }
@@ -103,3 +103,47 @@
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 530px) {
+    
+    .song-preview__icon-list {
+        display: none;
+    }
+
+    .volume-actions__volume-slider {
+        display: none;
+    }
+
+    .volume-actions {
+        min-width: 0;
+    }
+
+
+    .song-preview {
+        gap: 5px;
+    }
+
+    .song-preview__album-img {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .song-preview {
+        display: none;
+    }
+
+    .player-actions {
+        padding: 10px;
+    }
+
+    .volume-actions {
+        display: none;
+    }
+
+    .main-upgrade {
+        display: none;
+    }
+}
+
