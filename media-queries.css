@@ -1,15 +1,17 @@
 /* SIDEBAR RESPONSIVENESS */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
 
     .sidebar {
         width: 50px;
         align-items: center;
+        align-content: center;
         gap: 12px;
+        padding: 10px 0;
     }
 
     .logo-wrapper__logo--small{
-        display: inline-block;
+        display: block;
     }
 
     .logo-wrapper__logo--big {
@@ -17,20 +19,12 @@
     }
 
     .widget-menu {
-        display: contents;
+        flex-grow: 1;
+        margin: 0;
     }
 
     .widget-menu__option {
         display: none;
-    }
-
-    .widget-menu__item {
-        border: 0;
-        padding: 0;
-    }
-
-    .widget-menu__item--active, .widget-menu__item:hover {
-        border: 0;
     }
 
     .widget-playlist {
@@ -38,13 +32,12 @@
     }
 
     .user-widget {
-        padding: 10px;
-        position: absolute;
-        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .user-widget__install-app {
-        padding: 7px;
         border: 0;
     }
 
@@ -60,15 +53,35 @@
 
 /* MAIN BODY RESPONSIVENESS */
 
-@media screen and (max-width:1240px) {
+@media screen and (max-width:870px) {
+    
+    .catalogue__list {
+        column-gap: 2%;
+        row-gap: 15px;
+    }
+    
     .catalogue__card {
-        width: 23%;
+        width: calc(94% / 4);
+    }
+
+    .catalogue__card-title {
+        font-size: 14px;
     }
 }
 
-@media screen and (max-width:880px) {
+@media screen and (max-width:670px) {
+    
+    .catalogue__list {
+        column-gap: 4%;
+        row-gap: 15px;
+    }
+    
     .catalogue__card {
-        width: 50%;
+        width: calc(96% / 2);
+    }
+
+    .catalogue__card-title {
+        font-size: 14px;
     }
 }
 
